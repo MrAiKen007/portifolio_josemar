@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #020617;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5e7eb;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.perfil {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #cbd5f5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+section {
+    padding: 80px 80px;
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills-box span {
+    padding: 10px 20px;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+}
+
+/* PROJETOS */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.projeto-card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+.contacto {
+    color: #38bdf8;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
